@@ -72,7 +72,7 @@
               <div class="info-value">Logic first, then execution</div>
             </div>
           </div>
-        </div>
+            </div>
       </div>
     </section>
 
@@ -177,6 +177,9 @@
             Tell us what you are trying to improve, launch, or simplify.
             We can help shape the idea into a practical next step.
           </p>
+          <button onclick="showForm()" class="btn btn-primary">
+             Start Inquiry
+          </button>
 
           <div class="contact-grid">
             <div class="contact-box">
@@ -197,6 +200,63 @@
         </div>
       </div>
     </section>
+    
+    <section id="contact-form" class="contact-section" id="contact">
+      <div class="contact-container">
+      
+        <h2>Contact Us</h2>
+        <p>Tell us a bit about your business needs and we’ll get back to you.</p>
+
+        <form id="contactForm" name="client-inquiry" method="POST" data-netlify="true" netlify action="/thank-you.html">
+          <input type="hidden" name="form-name" value="client-inquiry" />
+
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="business">Business Name</label>
+            <input type="text" id="business" name="business" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone" />
+          </div>
+
+          <div class="form-group">
+            <label for="service">Service Needed</label>
+            <select id="service" name="service">
+              <option value="">Please select</option>
+              <option value="website">Website Development</option>
+              <option value="pos">POS / Receipt System</option>
+              <option value="business-tools">Custom Business Tools</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Project Details</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Send Inquiry</button>
+        </form>
+          <script>
+          document.getElementById("contactForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+            alert("Thank you! Your form was submitted.");
+          });
+          </script>
+      </div>
+    </section>
   </main>
 </body>
 </html>
+<script src="js/script.js"></script>

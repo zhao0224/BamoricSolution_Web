@@ -532,3 +532,69 @@ body {
 #contact {
   scroll-margin-top: 140px;
 }
+.contact-section {
+  padding: 64px 20px;
+  background: #f7f9f8;
+}
+
+.contact-container {
+  max-width: 720px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.contact-container h2 {
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.contact-container p {
+  text-align: center;
+  margin-bottom: 28px;
+  color: #555;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d7d7d7;
+  border-radius: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.submit-btn {
+  display: inline-block;
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  background: #1f6f4a;
+  color: #fff;
+}
+
+#contact-form {
+  display: none;
+}
